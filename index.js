@@ -2,9 +2,11 @@
 const express = require("express");
 
 //create an express server from the express function above
-const server = express(); //server is currently deaf af, can't hear anything
+const server = express(); //server is currently deaf af, can't hear anything\
 
-const PORT = 3000;
+console.log("");
+
+const PORT = process.env.PORT || 3000;
 
 server.listen();
 
