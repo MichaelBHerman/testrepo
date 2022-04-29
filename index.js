@@ -44,7 +44,7 @@ server.get("/students", (req, res) => {
     return res.send(students[name]); //if query is name, return the name
     // let filteredStudents = Object.values(students)
   }
-
+  return res.send(students);
   //   if (interests) {
   //     filteredStudents = filteredStudents.filter((student) =>
   //     student.interests.includes(interests.toLowerCase())
